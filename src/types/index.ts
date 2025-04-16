@@ -22,7 +22,7 @@ export type DashboardConfig = {
 
 export type SkillsConfig = {
   title: string;
-  progress: number;
+  skills: string[];
 };
 
 export type EducationConfig = {
