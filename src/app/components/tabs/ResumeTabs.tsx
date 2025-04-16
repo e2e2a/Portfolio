@@ -3,7 +3,6 @@ import React from 'react';
 import { Separator } from '@/components/ui/separator';
 import { Briefcase, GraduationCap, Code2 } from 'lucide-react';
 import { educationConfig, experienceConfig, skillsConfig } from '@/constant';
-import { SkillProgress } from './components/SkillProgress';
 
 const ResumeTabs = () => {
   return (
@@ -66,14 +65,18 @@ const ResumeTabs = () => {
             <Code2 className="w-5 h-5 stroke-yellow-500" />
             Skills & Tools
           </h2>
-          <div className="border-t mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 w-full shadow-lg shadow-neutral-300 dark:shadow-zinc-900 px-6 rounded-xl pt-3 pb-6">
-            {skillsConfig &&
-              skillsConfig.length > 0 &&
-              skillsConfig.map((skill, idx) => (
-                <div className="" key={idx}>
-                  <SkillProgress skill={skill} />
-                </div>
-              ))}
+          <div className="border-t mt-5 gap-x-6 gap-y-2 w-full shadow-lg shadow-neutral-300 dark:shadow-zinc-900 px-6 rounded-xl pt-3 pb-6">
+            <div className="flex flex-col gap-y-5">
+              {skillsConfig.length > 0 &&
+                skillsConfig.map((item, idx) => (
+                  <div key={idx} className="relative group">
+                    <span className="absolute -left-3 top-1.5 w-2.5 h-2.5 rounded-full bg-yellow-500 border-2 border-white dark:border-zinc-800" />
+                    <div className="font-bold">{item.title}</div>
+                    <Separator className="py-[0.1px] rounded-md bg-yellow-400/90 mb-2" />
+                    <div className="text-muted-foreground">{item.skills.join(', ')}</div>
+                  </div>
+                ))}
+            </div>
           </div>
         </div>
       </div>

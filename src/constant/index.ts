@@ -40,24 +40,26 @@ export const dashboardConfig: DashboardConfig = {
 };
 
 export const skillsConfig: SkillsConfig[] = [
-  { title: 'MongoDB', progress: 100 },
-  { title: 'MySQL', progress: 25 },
-  { title: 'Next.js', progress: 95 },
-  { title: 'Node.js', progress: 95 },
-  { title: 'Laravel', progress: 15 },
-  { title: 'Express', progress: 95 },
-  { title: 'EJS', progress: 95 },
-  { title: 'REST APIs', progress: 85 },
-  { title: 'Bootstrap CSS', progress: 70 },
-  { title: 'Redis', progress: 40 },
-  { title: 'Tailwind CSS', progress: 90 },
-  { title: 'TypeScript', progress: 90 },
-  { title: 'React.js', progress: 90 },
-  { title: 'Git & GitHub', progress: 80 },
-  { title: 'Firebase', progress: 60 },
-  { title: 'Supabase', progress: 50 },
-  { title: 'Vercel(Deployment & Hosting)', progress: 85 },
-  { title: 'Render(Deployment & Hosting)', progress: 80 },
+  {
+    title: 'Web Frontend',
+    skills: ['EJS', 'Bootstrap', 'Tailwind CSS', 'React.JS'],
+  },
+  {
+    title: 'Web Backend',
+    skills: ['Node.JS', 'Next.JS', 'Express.JS', 'Laravel', 'Rest APIs'],
+  },
+  {
+    title: 'Database',
+    skills: ['MongoDB', 'MySQL', 'Firebase', 'Redis', 'Supabase'],
+  },
+  {
+    title: 'Hosting',
+    skills: ['Vercel', 'Render'],
+  },
+  {
+    title: 'Developer Tools',
+    skills: ['Git', 'Github'],
+  },
 ];
 
 export const educationConfig: EducationConfig[] = [
