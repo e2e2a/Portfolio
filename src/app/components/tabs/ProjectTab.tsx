@@ -14,7 +14,7 @@ const ProjectTab = () => {
           </div>
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 px-8 gap-y-10 gap-x-2 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 px-8 gap-y-10 gap-x-2 w-full mb-6">
         {projectConfig &&
           projectConfig.length > 0 &&
           projectConfig.map((project, index) => (

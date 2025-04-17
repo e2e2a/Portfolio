@@ -17,7 +17,7 @@ const MyAvatar = () => {
         <div className="group" style={{ clipPath: 'circle(50% at 50% 50%)' }}>
           <Avatar className="cursor-not-allowed rounded-full group-hover:shadow-2xl hover:drop-shadow-2xl bg-neutral-300 border-2 border-gray-400/65 dark:border-neutral-300/65 shadow-sm drop-shadow-xl dark:bg-gradient-to-br dark:from-zinc-950 dark:via-zinc-900 dark:to-zinc-800 h-64 w-64">
             <AvatarImage
-              className="-ml-4 mt-6 scale-110 group-hover:brightness-110 transform group-hover:scale-125 duration-[250ms] transition-all ease-in-out "
+              className="ml-1 mt-3 scale-110 group-hover:brightness-110 transform transition-all ease-in-out "
               src="/mypicture-nobg.png"
               alt="mypicture"
             />
@@ -33,7 +33,6 @@ const MyAvatar = () => {
       <div className="w-full px-3 my-3 flex lg:flex sm:hidden justify-center">
         <Separator orientation="horizontal" className="h-24 w-px bg-gray-300" />
       </div>
-      {/* <Separator className=" w-[1px] lg:w-full lg:min-h-[1px]" /> */}
       <div className="flex flex-col justify-start  pl-5 gap-y-5">
         {contactConfig &&
           contactConfig.length > 0 &&

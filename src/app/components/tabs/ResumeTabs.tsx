@@ -72,7 +72,6 @@ const ResumeTabs = () => {
                   <div key={idx} className="relative group">
                     <span className="absolute -left-3 top-1.5 w-2.5 h-2.5 rounded-full bg-yellow-500 border-2 border-white dark:border-zinc-800" />
                     <div className="font-bold">{item.title}</div>
-                    <Separator className="py-[0.1px] rounded-md bg-yellow-400/90 mb-2" />
                     <div className="text-muted-foreground">{item.skills.join(', ')}</div>
                   </div>
                 ))}
