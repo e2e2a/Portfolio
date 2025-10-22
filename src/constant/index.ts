@@ -60,6 +60,10 @@ export const skillsConfig: SkillsConfig[] = [
     title: 'Developer Tools',
     skills: ['Git', 'Github'],
   },
+  {
+    title: 'SEO & Analytics',
+    skills: ['Google Search Console', 'Google Analytics', 'Ahrefs', 'Ubersuggest', ' Labrika'],
+  },
 ];
 
 export const educationConfig: EducationConfig[] = [
