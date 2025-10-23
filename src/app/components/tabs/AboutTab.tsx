@@ -7,12 +7,12 @@ const AboutTab = () => {
   return (
     <div className="flex items-start flex-col w-full py-5 gap-y-10">
       <div className="flex flex-col gap-y-3 px-8 ">
-        <h1 className="font-bold text-3xl flex flex-col tracking-wide">
+        <h2 className="font-bold text-3xl flex flex-col tracking-wide">
           About Me
           <div className=" w-14">
             <Separator className="py-[2px] rounded-md bg-yellow-500" />
           </div>
-        </h1>
+        </h2>
         <span className="font-normal text-muted-foreground first-letter:ml-5 text-[15px]">
           I&apos;m a web developer from Estaka, Dipolog City, Zamboanga Del Norte, passionate about
           creating things that live on the internet. I enjoy the process of bringing ideas to life
@@ -26,7 +26,7 @@ const AboutTab = () => {
         </span>
       </div>
       <div className="flex flex-col gap-y-3 px-8">
-        <h1 className="font-semibold text-2xl tracking-normal">What I&apos;m Doing</h1>
+        <h3 className="font-semibold text-2xl tracking-normal">What I&apos;m Doing</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-3">
           {whatImDoingConfig &&
             whatImDoingConfig.length > 0 &&
@@ -46,7 +46,7 @@ const AboutTab = () => {
                     </div>
 
                     <div className="flex flex-col justify-between h-auto">
-                      <h1 className="">{item.title}</h1>
+                      <h4 className="">{item.title}</h4>
                       <p className="text-muted-foreground">{item.description}</p>
                     </div>
                   </div>
@@ -56,7 +56,7 @@ const AboutTab = () => {
         </div>
       </div>
       <div className="flex flex-col gap-y-3 px-8 w-full items-center mt-5">
-        <h1 className="font-extrabold text-2xl tracking-normal uppercase italic">My Code Fuel</h1>
+        <h3 className="font-extrabold text-2xl tracking-normal uppercase italic">My Code Fuel</h3>
         <span className="font-normal text-muted-foreground first-letter:ml-5 text-[15px]">
           <span className="font-normal text-muted-foreground first-letter:ml-5 text-[15px] italic">
             &quot;I don&apos;t code without coffee – it&apos;s my syntax checker!&quot;
