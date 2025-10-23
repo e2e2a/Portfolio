@@ -12,9 +12,14 @@ const MainTabs = () => {
   const { tab, setTab } = useGlobalState();
 
   return (
-    <Tabs value={tab} onValueChange={setTab} defaultValue="about" className="w-full">
+    <Tabs
+      value={tab}
+      onValueChange={setTab}
+      defaultValue="about"
+      className="w-full bg-neutral-200 dark:bg-zinc-800 dark:border-neutral-300/65"
+    >
       <div className="absolute w-full flex justify-end">
-        <TabsList className="hidden lg:flex w-5/8 py-5 justify-evenly text-xl border border-transparent rounded-bl-2xl shadow-sm drop-shadow-xl bg-neutral-200 brightness-105 dark:bg-zinc-800 dark:brightness-120 rounded-tl-none rounded-br-none">
+        <TabsList className="hidden lg:flex w-5/8 py-5 justify-evenly text-xl border border-transparent rounded-bl-2xl shadow-md drop-shadow-xl bg-neutral-200 brightness-[101%] dark:bg-zinc-800 dark:brightness-120 rounded-tl-none rounded-br-none">
           <TabsTrigger
             value="about"
             className={cn(
