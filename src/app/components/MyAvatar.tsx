@@ -8,7 +8,7 @@ import { contactConfig } from '@/constant';
 
 const MyAvatar = () => {
   return (
-    <div className="z-2 border-2 dark:border-neutral-300/65 bg-neutral-100 border-gray-400/65 dark:bg-zinc-800 rounded-lg flex items-center flex-col sm:flex-row lg:flex-col justify-evenly lg:justify-start shadow-xl drop-shadow-4xl w-full lg:w-[20rem] h-auto">
+    <div className="z-2 border-2 dark:border-neutral-300/65 bg-neutral-200 border-gray-400/65 dark:bg-zinc-800 rounded-lg flex items-center flex-col sm:flex-row lg:flex-col justify-evenly lg:justify-start shadow-xl drop-shadow-4xl w-full lg:w-[20rem] h-auto">
       <div
         onDragStart={e => e.preventDefault()}
         onCopy={e => e.preventDefault()}
@@ -38,7 +38,7 @@ const MyAvatar = () => {
           contactConfig.length > 0 &&
           contactConfig.map((contact, index) => (
             <div key={index} className="flex justify-between gap-2">
-              <div className="drop-shadow-2xl dark:bg-zinc-800 bg-neutral-200 brightness-105 rounded-xl px-2.5 pt-[9px] pb-3 shadow-md">
+              <div className="drop-shadow-2xl dark:bg-zinc-800 bg-neutral-200 rounded-xl px-2.5 pt-[9px] pb-3 shadow-md">
                 <contact.Icon className="h-6 w-6 stroke-[2px] stroke-yellow-500" />
               </div>
               <div className="flex flex-col w-full">
