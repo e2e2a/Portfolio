@@ -100,14 +100,28 @@ export const experienceConfig: ExperienceConfig[] = [
     role: 'Full Stack Developer',
     year: '2022 – Present',
     description:
-      'Worked with various clients on full-stack development projects, delivering responsive and modern web.',
+      'Provide full-stack web development services for local clients, building responsive, modern websites and custom web solutions tailored to their business needs.',
+  },
+  {
+    company: 'Dipolog City Institute of Technology INC.',
+    role: 'Teacher',
+    year: 'May 2025 – Present',
+    description:
+      'As a passionate and dedicated teacher, I strive to create an engaging and supportive learning environment where students can grow both academically and personally. I design lessons that inspire curiosity, encourage critical thinking, and help students develop practical skills. By integrating technology and personalized teaching approaches, I ensure that every student has the opportunity to succeed and reach their full potential.',
+  },
+  {
+    company: 'OBI Services',
+    role: 'Supervisor',
+    year: 'June 2025 – October 2025',
+    description:
+      'As a team supervisor for WordPress web development and content, I oversee project workflows, ensure high-quality website performance, and optimize content for SEO. I coordinate between developers and content writers to maintain consistency in design, functionality, and brand voice. By implementing SEO strategies and performance monitoring, I help improve site visibility, user engagement, and overall search rankings.',
   },
   {
     company: 'OBI Services',
     role: 'Mid-Level JSON Developer',
     year: 'November 2024 – March 2025',
     description:
-      'Worked with various clients on full-stack development projects, delivering responsive, modern web and mobile apps.',
+      'I created a custom web scraping system specifically designed to extract complete product and pricing data from two e-commerce websites. The system processes and compares over 100,000 products, ensuring data accuracy and removing duplicates before delivery. Scraping is performed on a regular schedule, either weekly or every 12 hours, depending on client requirements, and the compiled comparison data is provided to clients to give them reliable, up-to-date pricing insights for analysis and business decisions.',
   },
 ];
 
