@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import './globals.css';
 import { MainNav } from '@/components/shared/nav/MainNav';
@@ -12,11 +11,6 @@ const roboto = Roboto({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'], // optional: define weights you plan to use
 });
-
-export const metadata: Metadata = {
-  title: 'Portfolio',
-  description: 'My Portfolio Website',
-};
 
 export default async function RootLayout({
   children,

@@ -23,14 +23,14 @@ const ProjectCard = ({ project }: IProps) => {
         <h3 className="text-xl font-semibold text-gray-800 dark:text-white">{project.title}</h3>
         <p className="mt-2 text-gray-600 dark:text-gray-300">{project.description}</p>
         <div className="mt-4">
-          <h4 className="font-semibold text-gray-800 dark:text-white">Tools Used:</h4>
+          <div className="font-semibold text-gray-800 dark:text-white">Tools Used:</div>
           <ul className="flex flex-wrap mt-2">
             {project.tools.map((tool, idx) => (
               <li
                 key={idx}
                 className="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm mr-2 mb-2"
               >
-                {tool}
+                <h4 className="">{tool}</h4>
               </li>
             ))}
           </ul>
