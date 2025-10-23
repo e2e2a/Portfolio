@@ -51,7 +51,7 @@ const ResumeTabs = () => {
                   <h4 className="font-semibold">
                     {exp.role} @ {exp.company}
                   </h4>
-                  <span className="text-yellow-400 font-medium text-sm">{exp.year}</span>
+                  <span className="text-yellow-500 font- text-sm">{exp.year}</span>
                   <p className="text-muted-foreground text-sm">{exp.description}</p>
                 </div>
               </div>
